@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>514</width>
+    <height>433</height>
    </rect>
   </property>
   <property name="contextMenuPolicy">
@@ -19,7 +19,7 @@
   <widget class="QPushButton" name="loadImgBtn">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>260</x>
      <y>20</y>
      <width>75</width>
      <height>23</height>
@@ -54,8 +54,8 @@
   <widget class="QGroupBox" name="testGroupBox">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>140</y>
+     <x>50</x>
+     <y>100</y>
      <width>171</width>
      <height>201</height>
     </rect>
@@ -82,7 +82,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="testLabel">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -96,17 +96,111 @@
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="loadModel">
+  <widget class="QPushButton" name="loadModelBtn">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>50</y>
+     <x>340</x>
+     <y>20</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Load model</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="statusGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>491</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Status</string>
+   </property>
+   <widget class="QTextEdit" name="statusTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>381</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearStatusBtn">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Status</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="resultGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>100</y>
+     <width>171</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Closest Image</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <widget class="QLabel" name="outputLabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>180</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Label : 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="refPic">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="classifyBtn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>20</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Classify</string>
    </property>
   </widget>
  </widget>
