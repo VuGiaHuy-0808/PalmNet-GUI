@@ -70,7 +70,7 @@ class MainWindow(QDialog):
         im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
         im2double = im2double_matlab(im)
         self.image = adjustFormat(im2double)
-        self.testLabel.setText("Label : " + str(int(fname[0][-11:-9])))
+        self.testLabel.setText("Label :" + str(int(fname[0][-11:-9])) + "\t" + "Filename :" + fname[0][-13:])
         self.statusTextEdit.append("Loading test image successfully!")
 
 
@@ -85,7 +85,7 @@ class MainWindow(QDialog):
         ind = np.argsort(distMat)
         stop = time.time()
         self.refPic.setPixmap(QPixmap(self.filepath + "\\" + self.refFilename[ind[1]][0]))
-        self.outputLabel.setText("Label : " + str(self.refLabel[ind[1]]))
+        self.outputLabel.setText("Label :" + str(self.refLabel[ind[1]]) + "\t" + "Filename :" + self.refFilename[ind[1]][0])
         self.statusTextEdit.append("Classified!")
         self.statusTextEdit.append("Classify time " + str((stop - start)) + ' seconds')
 
