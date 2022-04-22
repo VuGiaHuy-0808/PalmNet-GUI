@@ -56,6 +56,10 @@ class MainWindow(QDialog):
             self.refFilename = list(reader)
             for i in range(len(self.refFilename)):
                 self.refLabel.append(int(self.refFilename[i][0][:4]))
+
+        #enable classify Btn
+        self.classifyBtn.setEnabled(True)
+        self.loadModelBtn.setEnabled(False)
         self.statusTextEdit.append("Loading model successfully!")
 
 

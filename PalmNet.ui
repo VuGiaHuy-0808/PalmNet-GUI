@@ -191,6 +191,9 @@
    </widget>
   </widget>
   <widget class="QPushButton" name="classifyBtn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>420</x>
